@@ -1,0 +1,1 @@
+export default function ProgressBar({value}){const c=value>=80?'danger':value>=65?'warn':'ok';return <div className="progress-cell"><div className="progress"><span className={c} style={{width:`${value}%`}}/></div><b>{value}%</b></div>}

@@ -1,0 +1,1 @@
+export default function MetricCard({icon,title,value,unit,detail,level='ok'}){return <div className="metric-card"><div className="metric-title"><span className="metric-icon">{icon}</span><span>{title}</span><i className={`dot ${level}`}/></div><div className="metric-value">{value}<small>{unit}</small></div><div className="metric-detail">{detail}</div></div>}

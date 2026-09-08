@@ -1,0 +1,1 @@
+export default function ResourceGauge({label,value}){const c=value>=80?'danger':value>=65?'warn':'ok';return <div className="gauge-box"><div className={`gauge ${c}`} style={{'--value':`${value*3.6}deg`}}><div className="gauge-center"><strong>{value}%</strong><span>{label}</span></div></div><span className={`gauge-status ${c}`}>{value>=80?'위험':value>=65?'주의':'정상'}</span></div>}
